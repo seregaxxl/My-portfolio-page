@@ -3,8 +3,34 @@
     position: relative;
     background: url('../img/mainBG.jpg') no-repeat 50%/cover;
     padding-top: 205px;
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
     &__title {
         width: 535px;
         margin-top: 10px;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        // width: 250px;
+        justify-content: start;
+        align-items: center;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        &:hover {
+            color:#000000;
+            text-decoration: none;
+        }
+
+
+
     }
 }
