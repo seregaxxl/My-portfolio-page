@@ -1,0 +1,120 @@
+.hamburger {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    width: 36px;
+    height: 21px;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #151812;
+    }
+span.long {
+    width: 36px;
+    }
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    &_active {
+        visibility: visible;
+        opacity: 1;
+        left: 0%;
+    }
+    &__block {
+        width: 345px;
+        height: 100vh;
+        background-color: $mcol;
+        position: relative;
+        transition: all .6s;
+        padding-top: 140px;
+        padding-left: 40px;
+        z-index: 10;
+    }
+    &__close {
+        top: 25px;
+        right: 25px;
+        position: absolute;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        position: relative;
+        &:before {
+            content:'';
+            position: absolute;
+            left: -35px;
+            top: 9px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000000;
+            border-radius: 100%;
+            transition: all .6s;
+        }
+        &:hover {
+            &:before {
+                background-color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &__social {
+        width: 90px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            cursor: pointer;
+            &:hover {
+                svg .github_icon {
+                    fill: green;
+                }
+                svg .instagram_icon {
+                    fill: purple;
+                }
+                svg .facebook_icon {
+                    fill: blue;
+                }
+    
+            }
+        }
+    }
+    &__overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.75;
+    }
+}

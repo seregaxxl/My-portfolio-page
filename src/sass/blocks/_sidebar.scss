@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    width: 340px;
+    align-items: center;
+    justify-content: space-around;
+    top: 230px;
+    left: 50px;
+    transform: translate(-50%, 170px) rotate(-90deg);
+    &__line {
+        width: 70px;
+        height: 2px;
+        background-color: #000000;
+    }
+    &__text {    
+        width: 148px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__icons {
+        transform: rotate(90deg);
+        &:hover {
+            svg .github_icon {
+                fill: orange;
+            }
+            svg .instagram_icon {
+                fill: purple;
+            }
+            svg .facebook_icon {
+                fill: blue;
+            }
+
+        }
+    }
+}
+
