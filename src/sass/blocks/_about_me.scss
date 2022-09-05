@@ -1,0 +1,67 @@
+.about_me {
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    .my_skills {
+        span {
+            font-size: 12px;
+        }
+        &__icon {
+            position: relative;
+            padding-left: 10px;
+            z-index: 2;
+            top: 14px;
+            left: 18px;
+            @include before_circle;
+            &:before{
+                top: -12%;
+                left: -6px;
+            }
+        }
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 116px 116px;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+    .grid-cotainer {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: 245px 315px;
+        height: 600px;
+        column-gap: 70px;
+        row-gap: 40px;
+        img {
+            // padding-top: 62px;
+            width: 100%
+        }
+    }
+
+}
+.grid-elem {
+    display: flex;
+    flex-direction: row;
+    .my_skills__icon {
+        display: block;
+        width: 32px;
+        img {
+            width: 100%
+        }
+    }
+    .my_skills__text {
+        padding-left: 24px;
+        width: 288px;
+        z-index: 3;
+    }
+}
+
+#grid-elem_foto {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
