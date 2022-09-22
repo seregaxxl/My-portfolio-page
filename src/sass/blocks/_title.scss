@@ -18,4 +18,24 @@
         font-size: 48px;
         line-height: 60px;
     }
+    &__subtitle {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    .yellow_line {
+        margin: 0;
+    }
+}
+h1 {
+    margin-bottom: 0;
 }

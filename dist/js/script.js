@@ -10,14 +10,10 @@ menu__close.addEventListener('click', () => {
     menu.classList.remove('menu_active')
 
 });
-// const hamburger = document.querySelector('.hamburger'),
-//       menu = document.querySelector('.menu'),
-//       closeElem = document.querySelector('.menu__close');
 
-// hamburger.addEventListener('click', () => {
-//     menu.classList.add('active');
-// });
+const counters = document.querySelectorAll('.scale_percent'),
+    lines = document.querySelectorAll('.scale_fill');
 
-// closeElem.addEventListener('click', () => {
-//     menu.classList.remove('active');
-// });
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+}) 

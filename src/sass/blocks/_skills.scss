@@ -1,20 +1,5 @@
 .skills {
     padding-top: 125px;
-    &__subtitle {
-        margin-bottom: 6px;
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &:before {
-            top: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__title {
-        margin-bottom: 25px;
-        text-align: center;
-    }
     .yellow_line {
         margin-bottom: 60px;
     }
