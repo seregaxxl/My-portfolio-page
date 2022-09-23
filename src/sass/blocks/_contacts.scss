@@ -5,10 +5,10 @@
         grid-template-columns: 400px 585px;
         justify-content: space-between;
         padding: 0 35px 0 52px;
-    }
+       
+        }
     &__foto {
         img {
-            padding-top: 62px;
             width: 400px;
             }
         }
@@ -28,15 +28,22 @@
     &__social {
         a {
             margin-right: 35px;
-        }
-        a:first-child {
-            img {
-                transform: rotate(90deg);
+            text-decoration: none;
+            &:hover {
+                svg .telegram_icon {
+                    fill: lightskyblue;
+                }
+                svg .instagram_icon {
+                    fill: purple;
+                }
+                svg .facebook_icon {
+                    fill: blue;
+                }
             }
         }
-        img {
-            width: 30px;
-            
+        svg {
+            width: 30px; 
+            height: 30px;
         }
         margin-bottom: 27.5px;
     }
@@ -44,7 +51,7 @@
         display: grid;
         grid-template: 45px 190px 45px / repeat(2, 280px) ;
         justify-content: space-between;
-        row-gap: 30px;
+        row-gap: 24px;
         label {
             font-size: 12px;
             font-weight: 500;
@@ -103,6 +110,14 @@
             text-align: left;
             padding: 5px 10px;
             resize: none;
+        }
+    }
+    &__btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    &:hover {
+        background-color: #fff;
         }
     }
 }
