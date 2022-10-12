@@ -133,6 +133,9 @@
         grid-column: 2 / 3;
         font-size: 12px;
         font-weight: 700;
-        line-height: 14px;
+        line-height: 12px;
+        input {
+            vertical-align:middle;
+        }
     }
 }
