@@ -1,0 +1,76 @@
+@media (max-width: 1439px) {
+    .sidebar {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background: url(../img/mainBG.jpg) no-repeat 0%/cover;
+    }
+    .about_me {
+        .grid-cotainer {
+            grid-template-columns: 400px 500px;
+            column-gap: 40px;
+        }
+        .my_skills {
+            grid-template: repeat(2,115px)/repeat(2,240px);
+            column-gap: 20px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    } 
+    .about_me {
+        .grid-cotainer {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        background: url(../img/mainBG.jpg) no-repeat 42%/cover;
+        &__title {
+        width: 300px;
+        line-height: 39px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .promo {
+        padding-top: 5vh;
+        &__btns {
+            margin-top: calc(85vh - var(--t_heigth) - var(--st_heigth));
+        }
+    }
+    .menu {
+        &__block {
+            padding-left: 20px;
+            width: 250px;
+        }
+    }
+}
