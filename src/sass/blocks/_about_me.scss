@@ -49,7 +49,7 @@
         padding-top: 120px;
         display: grid;
         grid-template-columns: 400px 670px;
-        grid-template-rows: 225px minmax(255px, auto);
+        grid-template-rows: minmax(255px, auto) minmax(255px, auto);
         grid-auto-rows: minmax(245px, auto);
         height: 658px;
         column-gap: 70px;

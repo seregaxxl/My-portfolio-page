@@ -1,15 +1,19 @@
 const hamburger = document.querySelector('.hamburger'),
-        menu = document.querySelector('.menu'),
-        menu__close = document.querySelector('.menu__close');
+        menu = document.querySelector('.menu');
 hamburger.addEventListener('click', () => {
     menu.classList.add('menu_active')
 
 });
 
-menu__close.addEventListener('click', () => {
+document.querySelectorAll('.menu__close, .menu__link').forEach(e => e.addEventListener('click', () => {
     menu.classList.remove('menu_active')
+}));
 
-});
+// menu__close.addEventListener('click', () => {
+//     menu.classList.remove('menu_active')
+
+// });
+
 
 const counters = document.querySelectorAll('.scale_percent'),
     lines = document.querySelectorAll('.scale_fill');
