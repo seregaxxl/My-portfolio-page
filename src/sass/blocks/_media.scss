@@ -219,7 +219,6 @@
             }
         }
         .grid-cotainer {
-            min-height: 900px;
             grid-template: 340px auto auto / 1fr;
             column-gap: 40px;
             padding-top: 40px;
@@ -322,7 +321,6 @@
             line-height: 36px;
         }
         .grid-cotainer {
-            min-height: 1100px;
             .photo {
                 min-width: 300px;
             }
