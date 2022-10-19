@@ -84,18 +84,11 @@
         <div class="container">
             <div class="grid-cotainer">
                 <div class="photo" id="grid-elem_foto">
-                    <!-- <img srcset="img/Photo_1_mobile.jpg 300w,
-                                 img/photo_1.jpg 400w" 
-                         sizes="(max-width: 576px) 280px,
-                               (min-width: 577px) 400px" 
-                         src="img/photo_1.jpg" alt="photo_of_mine"> -->
-                         <picture>
-                            <source media="(max-width: 576px)" srcset="img/Photo_1_mobile.jpg">
-                            <source media="(min-width: 577px)" srcset="img/photo_1.jpg">
-                            <img src="img/photo_1.jpg" alt="photo_of_mine">
-                         </picture>
-
-                                                        
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/Photo_1_mobile.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photo_1.jpg">
+                        <img src="img/photo_1.jpg" alt="photo_of_mine">
+                    </picture>                                        
                 </div>
                 <div class="biografy_text" id="grid-elem_biografy_text">
                     <div class="title title_fz16 about_me__subtitle">
@@ -414,16 +407,6 @@
                 </div>
                 <div class="price__column">
                     <ul>
-                        <!-- <li>
-                            <div class="service__name">Web-приложение</div>
-                            <div class="service__price">от 28000 руб.</div>
-                            <div class="service__descr">Приложение внутри браузера для лучшего комфорта</div>
-                        </li> -->
-                        <!-- <li>
-                            <div class="service__name">Android/IOS Приложение</div>
-                            <div class="service__price">от 25000 руб.</div>
-                            <div class="service__descr">Приложение для смартфона любой ОС</div>
-                        </li> -->
                         <li>
                             <div class="service__name">Дизайн</div>
                             <div class="service__price">Индивидуально</div>
@@ -433,8 +416,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> 
     <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -461,13 +443,13 @@
                         </svg>  </a>
                     </div>
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
-                    <form action="none" class="contacts__form">
+                    <form class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
@@ -475,7 +457,7 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
-                            <button class="btn contacts__btn">Отправить сообщение</button>
+                            <button type="submit" class="btn contacts__btn">Отправить сообщение</button>
                         </div>
                         <div class="contacts__privacy">
                             <input required type="checkbox"> <span> Я согласен(а) с <a href="/privacy.html">политикой конфиденциальности</a> </span>  
@@ -485,6 +467,11 @@
             </div>
         </div>
     </section>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

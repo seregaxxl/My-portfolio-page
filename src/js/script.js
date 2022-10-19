@@ -9,12 +9,6 @@ document.querySelectorAll('.menu__close, .menu__link').forEach(e => e.addEventLi
     menu.classList.remove('menu_active')
 }));
 
-// menu__close.addEventListener('click', () => {
-//     menu.classList.remove('menu_active')
-
-// });
-
-
 const counters = document.querySelectorAll('.scale_percent'),
     lines = document.querySelectorAll('.scale_fill');
 
@@ -22,19 +16,49 @@ counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-// let promo__subtitle = document.querySelector('.promo__subtitle');
-// let subtitle_height = promo__subtitle.offsetHeight;
+// jQuery.validator.setDefaults({
+//   debug: false,
+//   success: "valid"
+// });
 
-// let promo__title = document.querySelector('.promo__title');
-// let title_height = '50vh';
-
-// // promo__title.offsetHeight;
-
-// const r = document.querySelector(':root');
-// r.style.setProperty('--t_heigth', title_heigh);
-
-// function myFunction_set() {
-//     r.style.setProperty('--t_heigth', '50vh');
-//     r.style.setProperty('--st_heigth', '50vh');
+// function validateForms(form) {
+//     $(form).validate({
+//       rules: {
+//         name: {
+//           required: true,
+//           minlength: 2
+//         },
+//         email: {
+//           required:true,
+//           email: true
+//           }
+//         },
+//       messages: {
+//         name:{
+//           required: "Пожалуйста, укажите Ваше имя",
+//           minlength: jQuery.validator.format("Имя не может быть короче {0} символов!")
+//         },
+//         email: {
+//           required: "Пожалуйста, укажите Ваш e-mail",
+//           email: "Используйте формат name@domain.com"
+//         }
+//       }
+//     });
 //   };
+
+// validateForms('.contacts__form');
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val("");
+    alert("Сообщение успешно отправлено");
+    $("form").trigger("reset");
+  });
+  return false;
+  });
 

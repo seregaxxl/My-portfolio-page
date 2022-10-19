@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     padding: 120px 0 90px 0px;
     &__wrapper {
         display: grid;
@@ -139,5 +140,9 @@
         input {
             vertical-align:middle;
         }
+    }
+    #email-error, #name-error {
+        position: absolute;
+        top: 35px;
     }
 }
