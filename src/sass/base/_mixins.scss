@@ -11,3 +11,18 @@
         z-index: -1;
     }
 }
+
+@keyframes slideout {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.slideout {
+    animation-duration: 0.7s;
+    animation-name: slideout;
+}

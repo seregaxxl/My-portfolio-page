@@ -1,0 +1,43 @@
+.language {
+    position: relative;
+    &__icon {
+        width: 25px;
+        position: absolute;
+        overflow: visible;
+        z-index: 1;
+        top: 30px;
+        left: 40px;
+        cursor: pointer;
+    }
+    &__choices {
+        transform: translateX(-300%);
+        transition: 0.7s;
+        position: absolute;
+        top: 30px;
+        left: 70px;
+        width: 100px;
+        height: 25px;
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+        border: solid 2px $mcol;
+        padding: 0 14px;
+    }
+    &__choice {
+        display: inline;
+        cursor: pointer;
+        &:hover {
+            color: $mcol;
+        }
+    }
+}
+
+.activechoices {
+    transform: translateX(0%);
+    
+}
+
+.eng {
+    display: none;
+}
+    
