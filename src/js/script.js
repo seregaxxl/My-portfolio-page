@@ -293,7 +293,7 @@ function eng() {
                         <div class="skills_grid-container__element">
                             <img src="icons/skills/css3.svg" alt="CSS">
                             <div class="title title_fz14">CSS3</div>
-                            <div class="skills_grid-container__element-text">This style language let me to create a variable design of a website. Design is limited only by imagination!</div>
+                            <div class="skills_grid-container__element-text">This style language let me to create a variable design of a website. Design is limited only by imagination!Also i work with SASS/SCSS/LESS</div>
                         </div>
                         <div class="skills_grid-container__element">
                             <img src="icons/skills/js.svg" alt="JavaScript">
