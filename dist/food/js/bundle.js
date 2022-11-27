@@ -695,7 +695,7 @@ window.addEventListener('DOMContentLoaded', () => {
         activeClass:'active'
     });
     Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    Object(_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])('.timer', new Date('November 20, 2022 00:00:00'), new Date());
+    Object(_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])('.timer', new Date('January 20, 2023 00:00:00'), new Date());
 
 });
 

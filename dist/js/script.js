@@ -205,76 +205,77 @@ function eng() {
                                 </li>
                             </ul>
                         </div>
-                        <div class="resume__column">Expirience</h3>
-                            <ul>
-                                <li>
-                                    <div class="resume__item">
-                                        <div class="resume__item-head">
-                                            <div class="resume__item-icon">
-                                                <img src="icons/experience/developer.svg" alt="computer">
+                        <div class="resume__column">
+                            <h3 class="title title_fz20 resume__column-title">Expirience</h3>
+                                <ul>
+                                    <li>
+                                        <div class="resume__item">
+                                            <div class="resume__item-head">
+                                                <div class="resume__item-icon">
+                                                    <img src="icons/experience/developer.svg" alt="computer">
+                                                </div>
+                                                <h4 class="title title_fz14">Senior Specialist</h4>
+                                                <div class="resume__item-location">
+                                                    OTP Bank 2012-2014
+                                                </div>
                                             </div>
-                                            <h4 class="title title_fz14">Senior Specialist</h4>
-                                            <div class="resume__item-location">
-                                                OTP Bank 2012-2014
-                                            </div>
-                                        </div>
-                                        <div class="resume__item-body">
-                                            My main achievment was creation of CRM system with a help of Microsoft Infopath
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="resume__item">
-                                        <div class="resume__item-head">
-                                            <div class="resume__item-icon">
-                                                <img src="icons/experience/dollar.svg" alt="dollar">
-                                            </div>
-                                            <h4 class="title title_fz14">Economist</h4>
-                                            <div class="resume__item-location">
-                                                Mushroom rainbow 2018-2020
+                                            <div class="resume__item-body">
+                                                My main achievment was creation of CRM system with a help of Microsoft Infopath
                                             </div>
                                         </div>
-                                        <div class="resume__item-body">
-                                                Development, implementation and run of strategic finance-economical plan with a help of Microsoft Excel.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="resume__item">
-                                        <div class="resume__item-head">
-                                            <div class="resume__item-icon">
-                                                <img src="icons/experience/designer.svg" alt="computer">
+                                    </li>
+                                    <li>
+                                        <div class="resume__item">
+                                            <div class="resume__item-head">
+                                                <div class="resume__item-icon">
+                                                    <img src="icons/experience/dollar.svg" alt="dollar">
+                                                </div>
+                                                <h4 class="title title_fz14">Economist</h4>
+                                                <div class="resume__item-location">
+                                                    Mushroom rainbow 2018-2020
+                                                </div>
                                             </div>
-                                            <h4 class="title title_fz14">Senior support engineer</h4>
-                                            <div class="resume__item-location">
-                                                Ecommpay 2020-2022
-                                            </div>
-                                        </div>
-                                        <div class="resume__item-body">
-                                            Technical support of financial project based on PHP and JS
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="resume__item">
-                                        <div class="resume__item-head">
-                                            <div class="resume__item-icon">
-                                                <img src="icons/experience/developer.svg" alt="computer">
-                                            </div>
-                                            <h4 class="title title_fz14">Front-End Developer</h4>
-                                            <div class="resume__item-location">
-                                                Freelance 2022
+                                            <div class="resume__item-body">
+                                                    Development, implementation and run of strategic finance-economical plan with a help of Microsoft Excel.
                                             </div>
                                         </div>
-                                        <div class="resume__item-body">
-                                            Website development, code review, editing existing projects
+                                    </li>
+                                    <li>
+                                        <div class="resume__item">
+                                            <div class="resume__item-head">
+                                                <div class="resume__item-icon">
+                                                    <img src="icons/experience/designer.svg" alt="computer">
+                                                </div>
+                                                <h4 class="title title_fz14">Senior support engineer</h4>
+                                                <div class="resume__item-location">
+                                                    Ecommpay 2020-2022
+                                                </div>
+                                            </div>
+                                            <div class="resume__item-body">
+                                                Technical support of financial project based on PHP and JS
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li>
+                                        <div class="resume__item">
+                                            <div class="resume__item-head">
+                                                <div class="resume__item-icon">
+                                                    <img src="icons/experience/developer.svg" alt="computer">
+                                                </div>
+                                                <h4 class="title title_fz14">Front-End Developer</h4>
+                                                <div class="resume__item-location">
+                                                    Freelance 2022
+                                                </div>
+                                            </div>
+                                            <div class="resume__item-body">
+                                                Website development, code review, editing existing projects
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-        
                 </div>
             </section>
             <section class="skills" id="skills">
@@ -293,7 +294,7 @@ function eng() {
                         <div class="skills_grid-container__element">
                             <img src="icons/skills/css3.svg" alt="CSS">
                             <div class="title title_fz14">CSS3</div>
-                            <div class="skills_grid-container__element-text">This style language let me to create a variable design of a website. Design is limited only by imagination!</div>
+                            <div class="skills_grid-container__element-text">This style language let me to create a variable design of a website. Design is limited only by imagination!Also i work with SASS/SCSS/LESS</div>
                         </div>
                         <div class="skills_grid-container__element">
                             <img src="icons/skills/js.svg" alt="JavaScript">
@@ -373,11 +374,11 @@ function eng() {
                             <img src="img/works/paprika.jpg" alt="Paprika">
                         </a>
                         <a href="#" class="portfolio__item">
-                            <img src="img/works/ipadf.jpg" alt="Ipad">
+                        <img src="img/works/ipadf.jpg" alt="Mac">
                         </a>
-                        <a href="#" class="portfolio__item portfolio__item_horizontal-2">
-                            <img src="img/works/macf.jpg" alt="Mac">
-                        </a>
+                        <a href="windows" class="portfolio__item portfolio__item_horizontal-2">
+                            <img src="img/works/windows.png" alt="windows">
+                        </a>   
                     </div>
                 </div>
             </section>
@@ -436,7 +437,7 @@ function eng() {
           integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
           crossorigin="anonymous"></script>
             <script src="js/jquery.validate.min.js"></script>
-            <script src="js/script.js"></script>
+            <script src="js/script.js"></script> 
                 `;
 }
 function main() {
